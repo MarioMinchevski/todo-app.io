@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>To do App | FEM</title>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>todo</h1>
+        <img class="screen-toggle" src="./images/icon-moon.svg" alt="light-mode">
+    </header>
+    <main class="app-container">
+        <div class="input-group">
+            <div class="circle-icon"></div>
+            <input type="text" name="to-do-input" id="to-do-input" placeholder="Create a new todo…">
+        </div>
+        <div class="to-dos-container">
+            <ul class="to-do-list">
+            </ul>
+        </div>
+        <div class="to-dos-footer">
+            <div class="items-left-wrapper">
+                <p><span class="items-left">0</span> items left</p>
+            </div>
+            <div class="filters-wrapper">
+                <label>
+                    <input type="radio" name="filter" id="all-items" checked>
+                    <span>All</span>
+                </label>
+                <label>
+                    <input type="radio" name="filter" id="active-items">
+                    <span>Active</span>
+                </label>
+                <label>
+                    <input type="radio" name="filter" id="completed-items">
+                    <span>Completed</span>
+                </label>
+            </div>
+            <div class="remove-items-wrapper">
+                <p>Clear Completed</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
